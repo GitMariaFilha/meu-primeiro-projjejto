@@ -1,0 +1,12 @@
+create database db_aula;
+USE db_aula;
+CREATE TABLE tb_pessoas (nome varchar(150),email varchar(150),idade Int)
+ALTER TABLE tb_pessoas
+ADD telefone VARCHAR(20);
+INSERT INTO tb_pessoas (nome, email, telefone, idade)
+VALUES
+('Pessoa 1', 'p1@email.com', '(11)998866765', 18),
+('Pessoa 2', 'p2@email.com', '(11)996687765', 35),
+('Pessoa 3', 'p3@email.com', '(11)998888885', 50);
+SELECT * FROM tb_pessoas;
+SELECT nome, idade FROM tb_pessoas;
